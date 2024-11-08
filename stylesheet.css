@@ -1,0 +1,251 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f4f4f9;
+}
+
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.nav-left h2 {
+    font-size: 24px;
+}
+
+.nav-left p {
+    font-size: 14px;
+    color: #ddd;
+}
+
+.nav-right a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #ddd;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+.nav-right a:hover {
+    color: #f4f4f9;
+}
+
+.about-section {
+    display: flex;
+    align-items: center;
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #fff;
+    width: 80%;
+    border-radius: 8px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-right: 20px;
+    object-fit: cover;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.about-text {
+    max-width: 600px;
+}
+
+.about-text h2 {
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.about-text p {
+    color: #555;
+    line-height: 1.6;
+}
+
+.nav-right a:hover {
+    color: #f4f4f9;
+    text-decoration: underline;
+    transition: color 0.3s, font-weight 0.3s, text-decoration 0.3s;
+}
+/* Skills Page Section */
+.skills-section {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #f4f4f9;
+}
+
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.skill-box {
+    background-color: #fff;
+    width: 200px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.skill-box img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+.skill-box h3 {
+    margin: 10px 0;
+    color: #333;
+}
+
+.skill-box p {
+    color: #555;
+    font-size: 14px;
+}
+
+.skill-box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+/* Projects Page Section */
+.projects-section {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #f4f4f9;
+}
+
+.projects-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.project-box {
+    background-color: #fff;
+    width: 100%;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    text-align: left;
+}
+
+.project-box h3 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.project-box p {
+    color: #555;
+    font-size: 14px;
+}
+
+.project-box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+/* Recommendations Page Section */
+.recommendations-section {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #f4f4f9;
+}
+
+.recommendation-card {
+    background-color: #fff;
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.recommendation-card p {
+    color: #555;
+    font-size: 16px;
+}
+
+.recommendation-card h4 {
+    color: #333;
+    margin-top: 10px;
+    font-style: italic;
+}
+
+.recommendation-form {
+    max-width: 600px;
+    margin: 30px auto;
+    text-align: left;
+}
+
+.recommendation-form h3 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.recommendation-form textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    resize: vertical;
+}
+
+.recommendation-form button {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.recommendation-form button:hover {
+    background-color: #555;
+}
+
+#submittedRecommendations {
+    max-width: 600px;
+    margin: 20px auto;
+}
+/* Popup Message */
+.popup {
+    display: none;
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 15px 30px;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+}
+

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Recommendations</title>
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+<body>
+    <nav>
+        <div class="nav-left">
+            <h2>Aayushma Gautam</h2>
+            <p>Email: gautam.aayushma03@gmail.com</p>
+            <p>Contact: +91 7077478276</p>
+        </div>
+        <div class="nav-right">
+            <a href="index.html">About Me</a>
+            <a href="skills.html">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="recommendations.html">Recommendations</a>
+        </div>
+    </nav>
+
+    <section class="recommendations-section">
+        <h2>Recommendations</h2>
+
+        <div class="recommendation-card">
+            <p>"A highly skilled developer with a keen eye for design and functionality. Highly recommended!"</p>
+            <h4>- Neetu Dey</h4>
+        </div>
+        <div class="recommendation-card">
+            <p>"Extremely professional and detail-oriented. Delivered above and beyond expectations."</p>
+            <h4>- Prashant Regmi</h4>
+        </div>
+        <div class="recommendation-card">
+            <p>"An excellent collaborator who brings creativity and problem-solving to every project."</p>
+            <h4>- Grivi Lamichhane</h4>
+        </div>
+
+        <form class="recommendation-form" id="recommendationForm">
+            <h3>Leave a Recommendation</h3>
+            <textarea id="recommendationInput" rows="4" placeholder="Write your recommendation here..."></textarea>
+            <button type="button" onclick="submitRecommendation()">Submit</button>
+        </form>
+
+        <div id="submittedRecommendations"></div>
+    </section>
+    
+<div id="popupMessage" class="popup">Thank you for your recommendation!</div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
